@@ -1,10 +1,14 @@
+import HeaderBajo from "./HeaderBajo";
+import HeaderTop from "./HeaderTop";
+
 
 const Header = () => {
-  return (
-    <>
-        <h1>hola</h1>
-    </>
-  )
-}
+    return (
+       <>
+        <HeaderTop/>
+        <HeaderBajo/>
+       </>
+    );
+};
 
-export default Header
+export default Header;
