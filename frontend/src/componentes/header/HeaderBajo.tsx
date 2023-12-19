@@ -52,7 +52,7 @@ const HeaderBajo = () => {
                     <Enlace to="noticias">NOTICTM</Enlace>
                     <Enlace to="contactenos">Contactenos</Enlace>
                 </div>
-                <div className="flex gap-3  hidden lg:inline-flex">
+                <div className=" gap-3  hidden lg:inline-flex">
                     <span className="bg-green-500 p-2 flex items-center rounded-full">
                         <WhatsApp fill="#FFFFFF" />
                     </span>
