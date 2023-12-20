@@ -5,6 +5,7 @@ import Enlace from "./Enlace";
 import WhatsApp from "../iconos/WhatsApp";
 import Facebook from "../iconos/Facebook";
 import Instagram from "../iconos/Instagram";
+import YouTube from "../iconos/YouTube";
 
 const HeaderBajo = () => {
     const [menu, setMenu] = useState(false);
@@ -15,11 +16,11 @@ const HeaderBajo = () => {
         }
     }, [tamanho]);
     return (
-        <nav className="flex items-center justify-between flex-wrap gap-3 p-2 ">
+        <nav className="flex items-center justify-between flex-wrap gap-0 p-2 ">
             <div className="flex items-center flex-shrink-0  mr-6">
                 <img src={logo} alt="" className="w-32" />
             </div>
-            <div className="flex gap-3 lg:hidden">
+            <div className="flex gap-1 sm:gap-3 lg:hidden">
                 <span className="bg-green-500 p-2 flex items-center rounded-full">
                     <WhatsApp fill="#FFFFFF" />
                 </span>
@@ -28,6 +29,9 @@ const HeaderBajo = () => {
                 </span>
                 <span className="bg-[#E1306C] p-2 flex items-center rounded-full">
                     <Instagram fill="#FFFFFF" />
+                </span>
+                <span className="bg-[#c4302b] p-2 flex items-center rounded-full">
+                    <YouTube fill="#FFFFFF" />
                 </span>
             </div>
             <div className="block lg:hidden">
@@ -62,11 +66,14 @@ const HeaderBajo = () => {
                     <span className="bg-[#E1306C] p-2 flex items-center rounded-full">
                         <Instagram fill="#FFFFFF" />
                     </span>
+                    <span className="bg-[#c4302b] p-2 flex items-center rounded-full">
+                        <YouTube fill="#FFFFFF" />
+                    </span>
                 </div>
-                <div className="flex justify-center">
+                <div className="flex justify-center ">
                     <a
                         href="#"
-                        className="text-sm px-4 py-2 leading-none border rounded  border-green-700 hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
+                        className="text-sm px-4 py-2 leading-none border  rounded  border-green-700 hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
                     >
                         Pagos
                     </a>

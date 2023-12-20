@@ -1,11 +1,11 @@
-import { Props } from "../../interfaces/Icono";
+import { PropsIcon } from "../../interfaces/Icono";
 
-const Facebook = ({ fill }: Props) => {
+const Facebook = ({ fill, width = "16", height = "16" }: PropsIcon) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            height="16"
-            width="16"
+            height={height}
+            width={width}
             viewBox="0 0 512 512"
             fill={fill}
         >

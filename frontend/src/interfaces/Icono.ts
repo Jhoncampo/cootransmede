@@ -1,3 +1,6 @@
-export interface Props{
-    fill?: string
+
+export interface PropsIcon{
+    fill?: string,
+    width?: string,
+    height?: string
 }

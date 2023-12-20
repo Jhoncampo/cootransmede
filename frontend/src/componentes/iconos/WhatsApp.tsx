@@ -1,13 +1,12 @@
-interface Props{
-    fill?: string
-}
+import { PropsIcon } from "../../interfaces/Icono";
 
-const WhatsApp = ({fill}: Props) => {
+
+const WhatsApp = ({fill, width = "16", height = "16" }: PropsIcon) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            height="16"
-            width="14"
+            height={height}
+            width={width}
             fill={fill}
             viewBox="0 0 448 512"
         >
