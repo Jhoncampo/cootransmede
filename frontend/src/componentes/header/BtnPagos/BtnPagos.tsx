@@ -1,7 +1,8 @@
+import "./btnPagos.css"
 const BtnPagos = () => {
     return (
         <div className="request-loader">
-            <span>👋</span>
+            <span>Pagos</span>
         </div>
     );
 };

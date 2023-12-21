@@ -6,6 +6,8 @@ import WhatsApp from "../iconos/WhatsApp";
 import Facebook from "../iconos/Facebook";
 import Instagram from "../iconos/Instagram";
 import YouTube from "../iconos/YouTube";
+import BtnPagos from "./BtnPagos/BtnPagos";
+import DropDown from "./DropDown";
 
 const HeaderBajo = () => {
     const [menu, setMenu] = useState(false);
@@ -16,7 +18,7 @@ const HeaderBajo = () => {
         }
     }, [tamanho]);
     return (
-        <nav className="flex items-center justify-between flex-wrap gap-0 p-2 ">
+        <nav className="flex items-center justify-between flex-wrap gap-0 p-2 max-w-screen-xl ">
             <div className="flex items-center flex-shrink-0  mr-6">
                 <img src={logo} alt="" className="w-32" />
             </div>
@@ -44,14 +46,14 @@ const HeaderBajo = () => {
             </div>
             <div className="w-full block flex-grow  gap-3 lg:flex lg:items-center lg:w-auto">
                 <div
-                    className={`text-sm text-center ${
+                    className={`text-sm text-center flex gap-3 ${
                         menu ? "" : "hidden"
                     }  lg:flex-grow`}
                 >
                     <Enlace to="inicio">Inicio</Enlace>
                     <Enlace to="nosotros">Nosotros</Enlace>
                     <Enlace to="asociados">Asociados</Enlace>
-                    <Enlace to="tramites">Tramites</Enlace>
+                    <DropDown></DropDown>
                     <Enlace to="app">App</Enlace>
                     <Enlace to="noticias">NOTICTM</Enlace>
                     <Enlace to="contactenos">Contactenos</Enlace>
@@ -73,10 +75,11 @@ const HeaderBajo = () => {
                 <div className="flex justify-center ">
                     <a
                         href="#"
-                        className="text-sm px-4 py-2 leading-none border  rounded  border-green-700 hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
+                        className="text-sm px-4 py-2 leading-none border  rounded  border-green-700 hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:hidden"
                     >
                         Pagos
                     </a>
+                    <BtnPagos/>
                 </div>
             </div>
         </nav>
