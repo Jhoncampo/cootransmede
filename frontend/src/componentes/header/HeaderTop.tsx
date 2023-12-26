@@ -46,7 +46,7 @@ const HeaderTop = () => {
                         <span className=" text-sm">Web</span>
                     </div>
                 </div>
-                <div className="flex px-2 items-center sm:gap-3 md:gap-0">
+                <div className="flex px-2 items-center sm:gap-3 md:gap-0 lg:gap-2">
                     <PlayStore fill="#FFFFFF" />
                     <span className="text-sm text-white text-center ">
                         Descargue gratis nuestra aplicación
