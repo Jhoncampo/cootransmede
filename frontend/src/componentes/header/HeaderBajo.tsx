@@ -17,10 +17,12 @@ const HeaderBajo = () => {
     useEffect(() => {
         if (tamanho > 1023) {
             setMenu(true);
+        }else{
+            setMenu(false)
         }
     }, [tamanho]);
     return (
-        <nav className="flex items-center gap-0 justify-between flex-wrap md:gap-3 p-2 max-w-screen-xl ">
+        <nav className="flex items-center gap-0  justify-between flex-wrap md:gap-3 p-2 pb-4 max-w-screen-xl ">
             <div className="flex items-center flex-shrink-0  mr-6">
                 <img src={logo} alt="" className="w-32" />
             </div>
@@ -84,7 +86,7 @@ const HeaderBajo = () => {
                     >
                         Pagos
                     </a>
-                    <div className="hidden ">
+                    <div className="hidden lg:flex cursor-pointer">
                         <BtnPagos />
                     </div>
                 </div>

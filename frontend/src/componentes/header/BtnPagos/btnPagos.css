@@ -17,12 +17,19 @@ body {
   background: #23A455;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
 }
+.request-loader:hover{
+  background: #000000;
+  transition: 1s;
+}
 
 .request-loader span {
   font-size: 16px;
   color: #ffffff;
   font-weight: 700;
   
+}
+.request-loader span:hover{
+  color: rgb(222, 222, 80);
 }
 
 .request-loader::after {

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ArrowLeft from "../iconos/ArrowLeft";
 import ArrowRight from "../iconos/ArrowRight";
 import Circulo from "../iconos/Circulo";
@@ -26,10 +26,6 @@ const imagenes: Img[] = [
         id: 4,
         img: "https://www.cootransmede.com/wp-content/uploads/2023/05/app-web2.jpg",
     },
-    {
-        id: 5,
-        img: "https://www.cootransmede.com/wp-content/uploads/2023/05/whatsapp-web.jpg",
-    },
 ];
 
 const Carrusel = () => {
@@ -52,26 +48,29 @@ const Carrusel = () => {
         setIndex(i);
     };
 
+    useEffect(() => {
+        const interval = setInterval(()=>{
+            imagenSiguiente()
+        }, 5000)
+        return () => clearInterval(interval)
+    },[index])
+
     return (
-        <div className=" max-w-[1400px] h-[400px] w-full m-auto relative group">
+        <div className=" max-w-[1400px] h-[35vh] w-full m-auto relative group lg:h-[60vh] z-10">
             <div
-                style={{ backgroundImage: `url(${imagenes[index].img})` }}
-                className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
+                style={{ backgroundImage: `url(${imagenes[index].img})`}}
+                className="w-full h-[35vh] bg-center bg-contain bg-no-repeat duration-500 md:bg-cover lg:h-[60vh]"
             ></div>
-            <div className="absolute hidden group-hover:block top-[50%] translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 cursor-pointer">
+            <div className="absolute block lg:hidden lg:group-hover:block top-[50%] translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-1 bg-[#23A455] lg:p-2 cursor-pointer">
                 <ArrowLeft
                     onClick={imagenAnterior}
                     fill="white"
-                    width="20px"
-                    height="20px"
                 />
             </div>
-            <div className="absolute hidden group-hover:block top-[50%] translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 cursor-pointer">
+            <div className={`absolute block lg:hidden lg:group-hover:block top-[50%] translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-1 bg-[#23A455] lg:p-2 cursor-pointer`}>
                 <ArrowRight
                     onClick={imagenSiguiente}
                     fill="white"
-                    width="20px"
-                    height="20px"
                 />
             </div>
             <div className="flex gap-1 top-4 justify-center py-2">
@@ -94,3 +93,5 @@ const Carrusel = () => {
 };
 
 export default Carrusel;
+
+//tengo este carrusel como hago para que cada 5 minutos se cambie de imagen

@@ -22,7 +22,7 @@ const DropDown = () => {
                 onMouseEnter={() => setClick(true)}
                 className={`${
                     click ? "" : "hidden"
-                } flex flex-col gap-3 items-start w-64 lg:absolute`}
+                } flex flex-col gap-3 items-start w-64 bg-white lg:absolute`}
             >
                 <DropEnlace to="/pagos">Pagos</DropEnlace>
                 <DropEnlace to="/pagos">Afiliación seguridad social</DropEnlace>

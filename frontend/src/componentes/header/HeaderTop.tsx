@@ -6,7 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const HeaderTop = () => {
     return (
-        <div className="bg-zinc-600 flex flex-col py-2 px-2 sticky top-0 items-center sm:border-b-green md:flex-row md:border-b-2 md:border-green-700 md:justify-center">
+        <div className="bg-zinc-600 flex z-30 flex-col py-2 px-2 sticky top-0 items-center sm:border-b-green md:flex-row md:border-b-2 md:border-green-700 md:justify-center">
             <div className=" md:border-r">
                 <TypeAnimation
                     sequence={["Solicite su taxi seguro", 4000, "S", 1000]}

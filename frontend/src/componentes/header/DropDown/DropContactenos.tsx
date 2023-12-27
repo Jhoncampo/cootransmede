@@ -5,7 +5,7 @@ import DropEnlace from "./DropEnlace";
 const DropContactenos = () => {
     const [click, setClick] = useState(false);
     return (
-        <div className="relative md:w-96 lg:w-auto">
+        <div className="relative  md:w-96 lg:w-auto">
             <span
                 onClick={() => setClick(!click)}
                 className=" flex items-center gap-1 p-2 text-base cursor-pointer"
@@ -17,7 +17,7 @@ const DropContactenos = () => {
                 onMouseLeave={() => setClick(false)}
                 className={`${
                     click ? "" : "hidden"
-                }  hover:flex flex-col  items-start w-64 lg:absolute`}
+                }  hover:flex flex-col  bg-white items-start w-64 lg:absolute`}
             >
                 <DropEnlace to="/pagos">PQRS</DropEnlace>
             </ul>

@@ -3,9 +3,9 @@ import HeaderTop from "./HeaderTop";
 
 const Header = () => {
     return (
-        <div>
+        <div className="" >
             <HeaderTop />
-            <div className="flex justify-center">
+            <div className="flex justify-center shadow-2xl z-20 relative">
                 <HeaderBajo />
             </div>
         </div>
