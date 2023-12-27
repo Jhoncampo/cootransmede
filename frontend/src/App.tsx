@@ -1,6 +1,7 @@
-import Afiliado from "./componentes/afiliados/afiliado";
+import Afiliado from "./componentes/afiliados/Afiliado";
 import Carrusel from "./componentes/carrusel/Carrusel";
 import Header from "./componentes/header/Header";
+import Informacion from "./componentes/informacion/Informacion";
 
 const App = () => {
     return (
@@ -8,6 +9,7 @@ const App = () => {
             <Header />
             <Carrusel />
             <Afiliado/>
+            <Informacion/>
         </>
     );
 };

@@ -56,10 +56,10 @@ const Carrusel = () => {
     },[index])
 
     return (
-        <div className=" max-w-[1400px] h-[35vh] w-full m-auto relative group lg:h-[60vh] z-10">
+        <div className=" w-full m-auto relative group bg-[#f1f1f1]  z-10">
             <div
                 style={{ backgroundImage: `url(${imagenes[index].img})`}}
-                className="w-full h-[35vh] bg-center bg-contain bg-no-repeat duration-500 md:bg-cover lg:h-[60vh]"
+                className="w-full h-[16vh]  sm:h-[18vh] md:h-[20vh] lg:h-[28vh] xl:h-[60vh] 2xl:h-[40vh] lg:bg-cover bg-center bg-cover bg-no-repeat duration-500 "
             ></div>
             <div className="absolute block lg:hidden lg:group-hover:block top-[50%] translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-1 bg-[#23A455] lg:p-2 cursor-pointer">
                 <ArrowLeft
