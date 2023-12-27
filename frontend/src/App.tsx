@@ -1,13 +1,15 @@
-import Carrusel from "./componentes/carrusel/Carrusel"
-import Header from "./componentes/header/Header"
+import Afiliado from "./componentes/afiliados/afiliado";
+import Carrusel from "./componentes/carrusel/Carrusel";
+import Header from "./componentes/header/Header";
 
 const App = () => {
-  return (
-    <>
-    <Header/>
-    <Carrusel/>
-    </>
-  )
-}
+    return (
+        <>
+            <Header />
+            <Carrusel />
+            <Afiliado/>
+        </>
+    );
+};
 
-export default App
+export default App;

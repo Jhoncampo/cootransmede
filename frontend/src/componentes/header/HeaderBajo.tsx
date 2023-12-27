@@ -16,9 +16,7 @@ const HeaderBajo = () => {
     let tamanho = screen.width;
     useEffect(() => {
         if (tamanho > 1023) {
-            setMenu(true);
-        }else{
-            setMenu(false)
+            setMenu(false);
         }
     }, [tamanho]);
     return (
