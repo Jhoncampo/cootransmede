@@ -20,9 +20,9 @@ const HeaderBajo = () => {
         }
     }, [tamanho]);
     return (
-        <nav className="flex items-center gap-0  justify-between flex-wrap md:gap-3 p-2 pb-4 max-w-screen-xl ">
+        <nav className="flex items-center gap-0 justify-between flex-wrap md:gap-3 p-2 pb-4 max-w-screen-xl ">
             <div className="flex items-center flex-shrink-0  mr-6">
-                <img src={logo} alt="" className="w-32" />
+                <img src={logo} alt="" className="w-20 md:w-28" />
             </div>
             <div className="flex gap-1 items-center sm:gap-3 lg:hidden">
                 <span className="bg-green-500 h-6 w-6 flex items-center justify-center rounded-full">
@@ -53,7 +53,7 @@ const HeaderBajo = () => {
                 <div
                     className={` ${
                         menu ? "" : "hidden"
-                    }  flex flex-col md:justify-center md:items-center lg:flex-row `}
+                    }  flex flex-col md:w-96 md:m-auto md:justify-center md:items-center lg:flex-row `}
                 >
                     <Enlace to="inicio">Inicio</Enlace>
                     <Enlace to="nosotros">Nosotros</Enlace>
