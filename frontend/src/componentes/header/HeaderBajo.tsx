@@ -16,7 +16,7 @@ const HeaderBajo = () => {
     let tamanho = screen.width;
     useEffect(() => {
         if (tamanho > 1023) {
-            setMenu(false);
+            setMenu(true);
         }
     }, [tamanho]);
     return (
@@ -53,7 +53,7 @@ const HeaderBajo = () => {
                 <div
                     className={` ${
                         menu ? "" : "hidden"
-                    }  flex flex-col md:w-96 md:m-auto md:justify-center md:items-center lg:flex-row `}
+                    }  flex flex-col md:w-96 md:m-auto md:justify-center md:items-center lg:w-full lg:flex-row `}
                 >
                     <Enlace to="inicio">Inicio</Enlace>
                     <Enlace to="nosotros">Nosotros</Enlace>

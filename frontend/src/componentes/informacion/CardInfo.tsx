@@ -5,7 +5,7 @@ const CardInfo = ({ urlImg, descripcion, textoBoton }: CardInfo) => {
         <a
             href=""
             style={{ backgroundImage: `url(${urlImg})` }}
-            className="bg-no-repeat bg-contain flex items-center relative  justify-center flex-col w-full h-[300px] lg:h-[450px] xl:h-[450px] xl:bg-cover"
+            className="bg-no-repeat bg-cover bg-center flex items-center relative  justify-center flex-col w-full h-[300px] lg:h-[450px] xl:h-[450px]"
         >
             <div className="bg-black opacity-50 w-full h-full"></div>
             <div className="absolute flex flex-col items-center justify-center">

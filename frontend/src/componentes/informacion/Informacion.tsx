@@ -13,7 +13,7 @@ const bg =
 const Informacion = () => {
     return (
         <div>
-            <div style={{ backgroundImage: `url(${bg})` }} className="">
+            <div style={{ backgroundImage: `url(${bg})` }} className="relative">
                 <div className="bg-white absolute opacity-80 w-full h-full"></div>
                 <div className="flex flex-col bg-cover items-center  justify-center md:flex-row w-full ">
                     <CardInfo
