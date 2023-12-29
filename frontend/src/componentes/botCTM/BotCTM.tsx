@@ -1,5 +1,4 @@
-const imgChatBot =
-    "https://www.cootransmede.com/wp-content/uploads/2021/12/Banner-WhatsApp2021.jpg ";
+
 
 const BotCTM = () => {
     return (

@@ -4,6 +4,7 @@ import BotCTM from "./componentes/botCTM/BotCTM";
 import Carrusel from "./componentes/carrusel/Carrusel";
 import Header from "./componentes/header/Header";
 import Informacion from "./componentes/informacion/Informacion";
+import Noticias from "./componentes/noticias/Noticias";
 
 const App = () => {
     return (
@@ -14,6 +15,7 @@ const App = () => {
             <Informacion/>
             <AppCTM/>
             <BotCTM/>
+            <Noticias/>
         </>
     );
 };
