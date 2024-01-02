@@ -5,21 +5,23 @@ import Carrusel from "./componentes/carrusel/Carrusel";
 import Enlaces from "./componentes/enlacesInteres/Enlaces";
 import Footer from "./componentes/footer/Footer";
 import Header from "./componentes/header/Header";
+import HeaderTop from "./componentes/header/HeaderTop";
 import Informacion from "./componentes/informacion/Informacion";
 import Noticias from "./componentes/noticias/Noticias";
 
 const App = () => {
     return (
         <>
-            <Header />
+            <HeaderTop />
+            <Header />  
             <Carrusel />
-            <Afiliado/>
-            <Informacion/>
-            <AppCTM/>
-            <BotCTM/>
-            <Noticias/>
-            <Enlaces/>
-            <Footer/>
+            <Afiliado />
+            <Informacion />
+            <AppCTM />
+            <BotCTM />
+            <Noticias />
+            <Enlaces />
+            <Footer />
         </>
     );
 };

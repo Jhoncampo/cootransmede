@@ -1,14 +1,13 @@
 import HeaderBajo from "./HeaderBajo";
-import HeaderTop from "./HeaderTop";
 
 const Header = () => {
     return (
-        <div className="" >
-            <HeaderTop />
+        <header className="" >
+            
             <div className="flex justify-center shadow-2xl z-20 relative">
                 <HeaderBajo />
             </div>
-        </div>
+        </header>
     );
 };
 
