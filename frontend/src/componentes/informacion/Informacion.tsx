@@ -8,7 +8,7 @@ const urlImg = [
         img: "https://www.cootransmede.com/wp-content/uploads/2020/08/notictm.png",
     },
 ];
-const bg =
+ export const bg =
     "https://www.cootransmede.com/wp-content/uploads/2020/08/FondoPrin.jpg";
 const Informacion = () => {
     return (
@@ -35,7 +35,7 @@ const Informacion = () => {
                     />
                 </div>
             </div>
-            <div className="bg-[#23A455] h-[30px] relative"></div>
+            {/* <div className="bg-[#23A455] h-[30px] relative"></div> */}
         </div>
     );
 };

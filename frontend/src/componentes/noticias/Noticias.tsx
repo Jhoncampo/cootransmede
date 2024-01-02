@@ -4,7 +4,7 @@ const Noticias = () => {
     return (
         <div>
             <div className="px-3 py-5 flex flex-col items-center gap-5 font-raleway">
-                <h2 className="text-[#23A455] text-3xl text-center font-extrabold">
+                <h2 className="text-[#23A455] text-3xl text-center font-extrabold md:text-4xl">
                     Noticias
                 </h2>
                 <div className="flex flex-col items-center justify-center gap-3 sm:flex-wrap sm:flex-row sm:justify-start sm:items-start sm:gap-10 ">

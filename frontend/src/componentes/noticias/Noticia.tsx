@@ -2,7 +2,7 @@ import { Noticia } from "../../interfaces/noticia";
 
 const Noticia = ({urlImg, titulo, descripcion, textoBoton = " Ver Más "}:Noticia) => {
     return (
-        <div className="flex flex-col max-w-[448px] items-center py-3 px-2 gap-3 justify-center  sm:max-w-[250px] lg:max-w-[300px]">
+        <div className="flex flex-col max-w-[448px] items-center py-3 px-2 gap-3 justify-center border border-black  sm:max-w-[250px] lg:max-w-[300px]">
             <img
                 className="w-[290px]"
                 src={urlImg}
