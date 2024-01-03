@@ -1,5 +1,5 @@
 import Check from "../iconos/Check";
-import { bg } from "../informacion/Informacion";
+import { bg } from "../Inicio/informacion/Informacion";
 
 const Footer = () => {
     return (

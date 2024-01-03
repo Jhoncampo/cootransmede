@@ -1,4 +1,4 @@
-import { CardInfo } from "../../interfaces/cardInfo";
+import { CardInfo } from "../../../interfaces/cardInfo";
 
 const CardInfo = ({ urlImg, descripcion, textoBoton }: CardInfo) => {
     return (

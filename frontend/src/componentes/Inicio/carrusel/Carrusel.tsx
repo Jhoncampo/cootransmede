@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import ArrowLeft from "../iconos/ArrowLeft";
-import ArrowRight from "../iconos/ArrowRight";
-import Circulo from "../iconos/Circulo";
-import { colores } from "../../utils/colores";
+import ArrowLeft from "../../iconos/ArrowLeft";
+import ArrowRight from "../../iconos/ArrowRight";
+import Circulo from "../../iconos/Circulo";
+import { colores } from "../../../utils/colores";
 
 interface Img {
     id: number;

@@ -1,4 +1,4 @@
-import { Caracteristica } from "../../interfaces/caracteristicas";
+import { Caracteristica } from "../../../interfaces/caracteristicas";
 
 const Caracteristica = ({numero, subtitulo, parrafo}: Caracteristica) => {
     return (

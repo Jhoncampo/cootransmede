@@ -1,4 +1,4 @@
-import { Noticia } from "../../interfaces/noticia";
+import { Noticia } from "../../../interfaces/noticia";
 
 const Noticia = ({urlImg, titulo, descripcion, textoBoton = " Ver Más "}:Noticia) => {
     return (
