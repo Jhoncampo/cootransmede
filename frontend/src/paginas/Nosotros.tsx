@@ -2,6 +2,7 @@ import { bg } from "../componentes/Inicio/informacion/Informacion";
 import { Imagen } from "../interfaces/imagen";
 import DescripcionDesplegable from "../componentes/Global/DescripcionDesplegable";
 import BannerPagina from "../componentes/Global/BannerPagina";
+import SeccionInformacion from "../componentes/Global/SeccionInformacion";
 const info: Array<Imagen> = [
     {
         titulo: "Presentación",
@@ -21,20 +22,51 @@ const info: Array<Imagen> = [
     },
 ];
 
+const text = ["hola", "dias", "jhon"]
+
+text.map((i) => console.log(i))
+
 const Nosotros = () => {
     return (
         <div className="font-raleway">
-            <BannerPagina bgImagen={bg} titulo="Nosotros"/>
-            <div className="py-6 px-3 flex flex-col gap-16 md:px-7">
+            <BannerPagina bgImagen={bg} titulo="Nosotros" />
+            <div className="py-6 px-3 flex flex-col items-center gap-16  md:px-7">
+                <SeccionInformacion
+                    img={info[0].img}
+                    titulo={info[0].titulo}
+                    descripcion={[
+                        `La Cooperativa de Transporte de Medellín, CTM –
+                    Cootransmede, es una empresa del sector de la
+                    economía solidaria, especializada en transporte de
+                    servicio público tipo taxi, con personería jurídica
+                    N° 00000625 del 10 de diciembre de 1965 y diciembre
+                    31 de 2003. Su base social está conformada por 1.500
+                    asociados, 1.100 conductores y un parque automotor
+                    cercano a los 1.800 vehículos`,
+                        `Cootransmede, opera acopios en establecimientos de
+                    importante trayectoria en la ciudad, como son:
+                    Centro Comercial Sandiego, Jumbo 65, Clínica
+                    Conquistadores, Clínica Medellín de Occidente y el
+                    Primer Parque de Laureles, reconocido este último
+                    como el Primer Acopio de Taxis Computarizado del
+                    País.`,
+                        `La prestación del servicio por parte de nuestros
+                    conductores, se ha caracterizado por la eficiencia,
+                    seguridad y confianza que ofrecemos a nuestros
+                    usuarios; esto obedece a que hemos incluido como
+                    componente estratégico para el logro de nuestros
+                    objetivos.`,
+                    ]}
+                />
 
-                <div className=" flex flex-col gap-4">
+                <div className=" flex flex-col items-center max-w-[1120px] gap-4 md:block l:flex l:flex-row ">
                     <img
                         src={info[0].img}
                         alt={info[0].titulo}
-                        className="rounded-lg"
+                        className="rounded-lg md:max-w-xs md:float-left md:mr-5 lg:max-w-md"
                     />
-                    <div className=" flex items-center flex-col gap-4">
-                        <h2 className="text-3xl text-[#23A455] font-extrabold">
+                    <div className=" flex items-center flex-col gap-4 md:block l:flex">
+                        <h2 className="text-3xl text-[#23A455] font-extrabold md:text-center md:pb-3">
                             {info[0].titulo}
                         </h2>
                         <p className="text-justify">
@@ -67,14 +99,14 @@ const Nosotros = () => {
                     </div>
                 </div>
 
-                <div className=" flex flex-col-reverse gap-4">
+                <div className="flex flex-col-reverse max-w-[1120px] gap-4 md:block l:flex l:flex-row-reverse ">
                     <img
                         src={info[1].img}
                         alt={info[1].titulo}
-                        className="rounded-lg"
+                        className="rounded-lg md:max-w-xs md:float-right md:ml-5 lg:max-w-md"
                     />
-                    <div className=" flex items-center flex-col gap-4">
-                        <h2 className="text-3xl text-[#23A455] font-extrabold">
+                    <div className=" flex items-center flex-col gap-4 md:block l:flex">
+                        <h2 className="text-3xl text-[#23A455] font-extrabold md:text-center md:pb-3">
                             {info[1].titulo}
                         </h2>
                         <p className="text-justify">
@@ -96,14 +128,14 @@ const Nosotros = () => {
                     </div>
                 </div>
 
-                <div className=" flex flex-col gap-4">
+                <div className=" flex flex-col gap-4 max-w-[1120px] md:block l:flex l:flex-row ">
                     <img
                         src={info[2].img}
                         alt={info[2].titulo}
-                        className="rounded-lg"
+                        className="rounded-lg md:max-w-xs md:float-left md:mr-5 lg:max-w-md"
                     />
-                    <div className=" flex items-center flex-col gap-4">
-                        <h2 className="text-3xl text-[#23A455] font-extrabold">
+                    <div className=" flex items-center flex-col gap-4 md:block l:flex">
+                        <h2 className="text-3xl text-[#23A455] font-extrabold md:text-center md:pb-3">
                             Misión
                         </h2>
                         <p className="text-justify">
@@ -116,7 +148,7 @@ const Nosotros = () => {
                             núcleo familiar, con base en los principios
                             cooperativos vigentes.
                         </p>
-                        <h2 className="text-3xl text-[#23A455] font-extrabold">
+                        <h2 className="text-3xl text-[#23A455] font-extrabold md:text-center md:pb-3">
                             Visión
                         </h2>
                         <p className="text-justify">
@@ -126,14 +158,14 @@ const Nosotros = () => {
                     </div>
                 </div>
 
-                <div className=" flex flex-col-reverse gap-4">
+                <div className=" flex flex-col-reverse gap-4 max-w-[1120px] md:block l:flex l:flex-row-reverse">
                     <img
                         src={info[3].img}
                         alt={info[3].titulo}
-                        className="rounded-lg"
+                        className="rounded-lg md:max-w-xs md:float-right md:ml-5 lg:max-w-md"
                     />
-                    <div className=" flex items-center flex-col gap-4">
-                        <h2 className="text-3xl text-[#23A455] font-extrabold">
+                    <div className=" flex items-center flex-col gap-4 md:block l:flex">
+                        <h2 className="text-3xl text-[#23A455] font-extrabold md:text-center md:pb-3">
                             {info[3].titulo}
                         </h2>
                         <p className="text-justify">
@@ -146,10 +178,10 @@ const Nosotros = () => {
                             núcleo familiar, con base en los principios
                             cooperativos vigentes.
                         </p>
-                        <h2 className="text-3xl text-[#23A455] font-extrabold">
+                        <h2 className="text-3xl text-[#23A455] font-extrabold md:text-center md:pb-3 lg:pb-0 ">
                             Valores corporartivos
                         </h2>
-                        <div className="flex flex-col w-full px-3">
+                        <div className="flex flex-col w-full px-3  ">
                             <DescripcionDesplegable
                                 titulo="Ética"
                                 descripcion="Conjunto de normas morales que rigen la conducta de la Cooperativa."

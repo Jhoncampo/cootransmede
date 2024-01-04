@@ -10,7 +10,7 @@ const DescripcionDesplegable = ({titulo, descripcion}: DescripcionDesplegable) =
 
     return (
         <div className="flex flex-col  py-3">
-            <div className="flex justify-between  items-center">
+            <div className="flex justify-between  items-center cursor-pointer" onClick={() => setValor(!valor)}>
                 <span
                     className={`font-bold text-[#7a7a7a] ${
                         valor ? "text-black" : ""
@@ -22,7 +22,7 @@ const DescripcionDesplegable = ({titulo, descripcion}: DescripcionDesplegable) =
                     className={`bg-[#23A455] px-1 rounded ease-linear duration-300 ${
                         valor ? "rotate-180 bg-white" : ""
                     }`}
-                    onClick={() => setValor(!valor)}
+                    
                 >
                     <CaretDown fill="#ffffff" isActive={valor} />
                 </div>
