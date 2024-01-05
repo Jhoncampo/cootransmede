@@ -3,17 +3,19 @@ export default {
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
         fontFamily: {
-            'sans': ['ui-sans-serif', 'system-ui'],
-            'serif': ['ui-serif', 'Georgia'],
-            'mono': ['ui-monospace', 'SFMono-Regular'],
-            'display': ['Oswald'],
-            'body': ['"Open Sans"'],
-            'raleway': ['"Raleway"']
-          },
-        extend: {},
+            sans: ["ui-sans-serif", "system-ui"],
+            serif: ["ui-serif", "Georgia"],
+            mono: ["ui-monospace", "SFMono-Regular"],
+            display: ["Oswald"],
+            body: ['"Open Sans"'],
+            raleway: ['"Raleway"'],
+            roboto: ["Roboto", "sans-serif"],
+        },
+        extend: {
+        },
         screens: {
             xsm: "500px",
-            
+
             sm: "640px",
             // => @media (min-width: 640px) { ... }
 

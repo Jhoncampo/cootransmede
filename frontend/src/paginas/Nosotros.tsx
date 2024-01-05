@@ -4,6 +4,7 @@ import DescripcionDesplegable from "../componentes/Global/DescripcionDesplegable
 import BannerPagina from "../componentes/Global/BannerPagina";
 import SeccionInformacion from "../componentes/Global/SeccionInformacion";
 import Titulo from "../componentes/Global/Titulo";
+import Organigrama from "../componentes/Nosotros/Organigrama";
 const info: Array<Imagen> = [
     {
         titulo: "Presentación",
@@ -23,15 +24,12 @@ const info: Array<Imagen> = [
     },
 ];
 
-const text = ["hola", "dias", "jhon"];
-
-text.map((i) => console.log(i));
 
 const Nosotros = () => {
     return (
         <div className="font-raleway">
             <BannerPagina bgImagen={bg} titulo="Nosotros" />
-            <div className="py-6 px-3 flex flex-col items-center gap-16  md:px-7">
+            <div className=" flex flex-col items-center gap-16 ">
                 <SeccionInformacion
                     img={info[0].img}
                     titulo={info[0].titulo}
@@ -133,6 +131,7 @@ const Nosotros = () => {
                     </div>
                 </SeccionInformacion>
             </div>
+            <Organigrama/>
         </div>
     );
 };

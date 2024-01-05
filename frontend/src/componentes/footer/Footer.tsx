@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div
             style={{ backgroundImage: `url(${bg})` }}
-            className="bg-cover bg-no-repeat relative font-raleway mt-5 text-white flex flex-col items-center gap-6"
+            className="bg-cover bg-no-repeat relative font-raleway mt-2 text-white flex flex-col items-center gap-6"
         >
             <div className="bg-[#23A455] h-full w-full  absolute opacity-90"></div>
             <div className="py-10 flex flex-col md:flex-row">
