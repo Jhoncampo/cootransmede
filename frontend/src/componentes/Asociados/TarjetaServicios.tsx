@@ -1,4 +1,4 @@
-import SeccionInformacion from '../componentes/Global/SeccionInformacion'
+import SeccionInformacion from '../Global/SeccionInformacion'
 
 const TarjetaServicios = () => {
   return (

@@ -1,4 +1,4 @@
-import Acopio from "../Acopio";
+import Acopio from "./Acopio";
 import Titulo from "../Global/Titulo";
 
 interface ImgObj {

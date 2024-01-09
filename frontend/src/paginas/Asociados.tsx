@@ -1,11 +1,11 @@
 import BannerPagina from "../componentes/Global/BannerPagina";
 import SeccionInformacion from "../componentes/Global/SeccionInformacion";
-import Acopios from "../componentes/Nosotros/Acopios";
-import AreaAdministrativa from "../componentes/Nosotros/AreaAdministrativa";
-import AreaComercial from "../componentes/Nosotros/AreaComercial";
-import AreaJuridica from "../componentes/Nosotros/AreaJuridica";
-import AreaSGSST from "../componentes/Nosotros/AreaSG-SST";
-import TarjetaServicios from "./TarjetaServicios";
+import Acopios from "../componentes/Asociados/Acopios";
+import AreaAdministrativa from "../componentes/Asociados/AreaAdministrativa";
+import AreaComercial from "../componentes/Asociados/AreaComercial";
+import AreaJuridica from "../componentes/Asociados/AreaJuridica";
+import AreaSGSST from "../componentes/Asociados/AreaSG-SST";
+import TarjetaServicios from "../componentes/Asociados/TarjetaServicios";
 
 const Asociados = () => {
     return (
