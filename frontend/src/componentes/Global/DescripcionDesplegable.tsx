@@ -5,7 +5,7 @@ import { DescripcionDesplegable } from "../../interfaces/descripcionDesplegable"
 
 
 
-const DescripcionDesplegable = ({titulo, descripcion}: DescripcionDesplegable) => {
+const DescripcionDesplegable = ({titulo, descripcion, children}: DescripcionDesplegable) => {
     const [valor, setValor] = useState(false)
 
     return (
@@ -19,20 +19,21 @@ const DescripcionDesplegable = ({titulo, descripcion}: DescripcionDesplegable) =
                     {titulo}
                 </span>
                 <div
-                    className={`bg-[#23A455] px-1 rounded ease-linear duration-300 ${
+                    className={`bg-[#23A455] px-1 rounded ease-linear  ${
                         valor ? "rotate-180 bg-white" : ""
                     }`}
                     
                 >
-                    <CaretDown fill="#ffffff" isActive={valor} />
+                    <CaretDown width="10" fill="#ffffff" isActive={valor} />
                 </div>
             </div>
             <span
                 className={`overflow-hidden transition-all duration-700 ease-in-out text-[#54595f] ${
-                    valor ? "max-h-20 opacity-100" : "max-h-0 opacity-0"
+                    valor ? "max-h-80 opacity-100" : "max-h-0 opacity-0"
                 }`}
             >
                 {descripcion}
+                {children}
             </span>
         </div>
     );

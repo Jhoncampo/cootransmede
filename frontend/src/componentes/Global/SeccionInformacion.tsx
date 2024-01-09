@@ -12,7 +12,7 @@ const SeccionInformacion = ({
     children,
 }: SeccionInformacion) => {
     return (
-        <div className={` w-full flex items-center justify-center ${posisionX ? "" : "bg-[bg-[#F1F1F1]]"}`}>
+        <div className={` w-full flex items-center justify-center ${posisionX ? "" : "bg-[#F1F1F1]"}`}>
             <div
                 className={`flex flex-col py-6 px-3 items-center max-w-[1024px] gap-4  md:px-7 md:block l:flex l:flex-row ${
                     posisionX ? "flex-col-reverse l:flex-row-reverse" : " "

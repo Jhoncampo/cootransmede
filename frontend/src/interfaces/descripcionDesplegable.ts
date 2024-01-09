@@ -1,4 +1,5 @@
 export interface DescripcionDesplegable {
     titulo: string,
-    descripcion: string
+    descripcion: string,
+    children?: any
 }
