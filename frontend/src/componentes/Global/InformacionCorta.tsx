@@ -6,6 +6,7 @@ const InformacionCorta = ({
     titulo,
     descripcion,
     posisionX = false,
+    children
 }: SeccionInformacion) => {
     return (
         <div className={` w-full flex items-center justify-center ${posisionX ? "" : "bg-[#F1F1F1]"}`}>
@@ -24,6 +25,7 @@ const InformacionCorta = ({
                         <p className="text-justify text-[14px] font-medium text-[#7a7a7a] font-roboto">
                             {descripcion}
                         </p>
+                        {children}
                 </div>
             </div>
         </div>

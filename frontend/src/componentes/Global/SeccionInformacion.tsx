@@ -9,7 +9,7 @@ const SeccionInformacion = ({
     subtitulo,
     subdescripcion,
     posisionX = false,
-    children,
+    children
 }: SeccionInformacion) => {
     return (
         <div className={` w-full flex items-center justify-center ${posisionX ? "" : "bg-[#F1F1F1]"}`}>
