@@ -80,7 +80,7 @@ const HeaderBajo = () => {
                 <div className="flex justify-center ">
                     <a
                         href="#"
-                        className="text-sm px-4 py-2  leading-none border  rounded  border-green-700 hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 logo:hidden"
+                        className="text-sm px-4 py-2  leading-none border rounded text-white bg-[#23A455] mt-4 logo:hidden"
                     >
                         Pagos
                     </a>
