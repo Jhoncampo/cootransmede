@@ -1,5 +1,7 @@
 import { CardInfo } from "./cardInfo";
 
 export interface Noticia extends CardInfo {
-    titulo: string
+    titulo: string,
+    enlace: string,
+    categoria: string
 }

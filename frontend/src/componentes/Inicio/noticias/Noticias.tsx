@@ -12,18 +12,24 @@ const Noticias = () => {
                         urlImg="https://www.cootransmede.com/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-20-at-10.05.58-1.jpeg"
                         titulo="HORARIOS DE ATENCIÓN TEMPORADA NAVIDEÑA 2023"
                         descripcion="Horarios 2023"
+                        enlace="#horarios"
+                        categoria="usuarios"
                     />
                     <Noticia
+                    categoria="usuarios"
                         urlImg="https://www.cootransmede.com/wp-content/uploads/2022/03/2560px-Logo_Bancolombia.svg.png"
                         titulo="INSTRUCTIVOS PAGOS BANCOLOMBIA"
                         descripcion="A continuación presentamos el instructivo para
                     realizar pagos a travez de la APP Bancolombia -
                     Ingresa a la APP..."
+                    enlace="#instructivos-bancolombia"
                     />
                     <Noticia
                         urlImg="https://www.cootransmede.com/wp-content/uploads/2021/12/PostulacionDelegados.jpg"
                         titulo="POSTULACIÓN DE DELEGADOS 2023 - 2024"
                         descripcion="Circular"
+                        enlace="#postulacion-delegados"
+                        categoria="usuarios"
                     />
                 </div>
             </div>
